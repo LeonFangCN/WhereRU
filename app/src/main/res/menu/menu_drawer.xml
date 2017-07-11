@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+        android:id="@+id/drawer_settings"
+        android:icon="@drawable/setting"
+        android:checkable="false"
+        android:title="@string/settings" />
+        <item
+            android:id="@+id/check_update"
+            android:icon="@drawable/check_update"
+            android:title="@string/check_update"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout"
+            android:checkable="false"
+            />
+    </group>
+</menu>

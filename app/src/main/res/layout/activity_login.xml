@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView android:src="@mipmap/ic_launcher"
+                   android:layout_width="@dimen/avatar_width_big"
+                   android:layout_height="@dimen/avatar_height_big"
+                   android:layout_marginBottom="24dp"
+                   android:layout_gravity="center_horizontal" />
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_account"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="phone"
+                      android:hint="@string/account" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_password"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="textPassword"
+                      android:hint="@string/password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn_style"
+            android:text="@string/login"/>
+
+        <TextView android:id="@+id/link_signUp"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="24dp"
+                  android:text="还没账号？立即注册"
+                  android:gravity="center"
+                  android:textSize="16dip"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+        <TextView android:id="@+id/link_forget_pwd"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="忘记密码"
+                  android:gravity="center"
+                  android:layout_marginBottom="24dp"
+                  android:textSize="16dip"/>
+    </LinearLayout>

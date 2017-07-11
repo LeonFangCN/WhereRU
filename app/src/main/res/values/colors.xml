@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="icon">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="clip_background">#77000000</color>
+
+
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="color_theme">@color/colorPrimary</color>
+    <color name="color_99">#999999</color>
+    <color name="color_msg_system_time_bg">#20000000</color>
+    <color name="color_chat_send_status">#818181</color>
+    <color name="color_1e1e1e">#1e1e1e</color>
+    <color name="color_b4">#b4b4b4</color>
+
+    <color name="color_emote_divder">#ffa1a1a1</color>
+    <color name="color_bottom_bg">#272a2e</color>
+    <color name="color_bottom_text_normal">#9da0a4</color>
+    <color name="color_bottom_text_press">#4f9ef6</color>
+    <color name="text_gray">#969696</color>
+    <color name="msg_chat_bg">#eceff4</color>
+    <color name="color_line">#dadada</color>
+</resources>

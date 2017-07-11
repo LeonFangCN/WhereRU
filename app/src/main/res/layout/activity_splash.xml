@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/avatar_width_big"
+        android:layout_height="@dimen/avatar_height_big"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher" />
+</RelativeLayout>

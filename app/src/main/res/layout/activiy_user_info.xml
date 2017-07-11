@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="56dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/button_padding">
+
+                <ImageView
+                    android:id="@+id/iv_recent_avatar"
+                    android:layout_width="@dimen/avatar_width_big"
+                    android:layout_height="@dimen/avatar_height_big"
+                    android:src="@drawable/personal_icon_default_avatar"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_18"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_recent_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_medium"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        style="@style/style_text_gray_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_padding"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/button_padding">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="@dimen/avatar_width_big"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tel"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_18"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/tel"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_padding"
+            android:id="@+id/cv_location"
+            android:visibility="gone"
+            android:background="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/button_padding">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="@dimen/avatar_width_big"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_18"
+                    android:text="@string/location"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_add_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn_style"
+            android:text="@string/add_friend"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_send_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn_style"
+            android:text="@string/send_msg"/>
+    </LinearLayout>
+</LinearLayout>

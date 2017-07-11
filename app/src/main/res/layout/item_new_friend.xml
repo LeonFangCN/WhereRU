@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:minHeight="@dimen/height_70"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+    <ImageView
+        android:id="@+id/iv_recent_avatar"
+        android:layout_width="@dimen/avatar_width"
+        android:layout_height="@dimen/avatar_height"
+        android:src="@drawable/personal_icon_default_avatar"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_recent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginStart="@dimen/margin_18"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_medium"
+            />
+
+        <TextView
+            android:id="@+id/tv_recent_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/style_text_gray_small"
+            android:layout_marginStart="@dimen/margin_18"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_aggree"
+        android:layout_gravity="center"
+        style="@style/btn_style_small"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agree"
+        />
+
+</LinearLayout>
